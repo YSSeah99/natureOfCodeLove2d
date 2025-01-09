@@ -1,1 +1,3 @@
-# mahjong_cs50gfinalproject
+# Using Love2D, Nature of Code
+
+https://natureofcode.com/
