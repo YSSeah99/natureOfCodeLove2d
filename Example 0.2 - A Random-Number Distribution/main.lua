@@ -5,7 +5,7 @@
 require 'src/Dependencies'
 
 function love.load()
-    love.window.setTitle('Template')
+    love.window.setTitle('A Random-Number Distribution')
     love.graphics.setDefaultFilter('nearest', 'nearest')
     math.randomseed(os.time())
 
