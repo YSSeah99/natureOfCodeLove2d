@@ -43,12 +43,12 @@
 require 'src/Dependencies'
 
 function love.load()
-    love.window.setTitle('Poke50')
+    love.window.setTitle('Template')
     love.graphics.setDefaultFilter('nearest', 'nearest')
     math.randomseed(os.time())
 
     push:setupScreen(VIRTUAL_WIDTH, VIRTUAL_HEIGHT, WINDOW_WIDTH, WINDOW_HEIGHT, {
-        fullscreen = false,
+        fullscreen = true,
         vsync = true,
         resizable = true
     })
@@ -81,13 +81,12 @@ end
 
 function love.update(dt)
     Timer.update(dt)
-    gStateStack:update(dt)
-
+    gStateMachine:update(dt)
     love.keyboard.keysPressed = {}
 end
 
 function love.draw()
     push:start()
-    gStateStack:render()
+    gStateMachine:render()
     push:finish()
 end

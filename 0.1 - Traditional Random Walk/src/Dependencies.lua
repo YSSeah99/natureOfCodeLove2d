@@ -7,7 +7,12 @@ Event = require 'lib/knife.event'
 push = require 'lib/push'
 Timer = require 'lib/knife.timer'
 
-require 'src/Animation'
+require 'src/constants'
+require 'src/StateMachine'
+require 'src/Util'
+
+require 'src/states/BaseState'
+require 'src/states/StartState'
 
 gTextures = {
 
