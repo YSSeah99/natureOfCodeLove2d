@@ -14,6 +14,8 @@ require 'src/Util'
 require 'src/states/BaseState'
 require 'src/states/StartState'
 
+require 'src/components/walker'
+
 gTextures = {
 
 }
