@@ -43,7 +43,7 @@
 require 'src/Dependencies'
 
 function love.load()
-    love.window.setTitle('Template')
+    love.window.setTitle('0.1 - A Traditional Random Walk')
     love.graphics.setDefaultFilter('nearest', 'nearest')
     math.randomseed(os.time())
 

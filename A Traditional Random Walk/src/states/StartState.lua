@@ -25,7 +25,7 @@ function StartState:render()
     -- title
     love.graphics.setFont(gFonts['small'])
     love.graphics.setColor(0, 0, 0, 1)
-    love.graphics.printf('Template', 2, VIRTUAL_HEIGHT * 0.01, VIRTUAL_WIDTH, 'center')
+    love.graphics.printf('0.1 - A Traditional Random Walk', 2, VIRTUAL_HEIGHT * 0.01, VIRTUAL_WIDTH, 'center')
 
     -- reset the color
     love.graphics.setColor(1, 1, 1, 1)
