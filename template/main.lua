@@ -53,13 +53,12 @@ function love.load()
         resizable = true
     })
 
-    -- this time, we are using a stack for all of our states, where the field state is the
-    -- foundational state; it will have its behavior preserved between state changes because
-    -- it is essentially being placed "behind" other running states as needed (like the battle
-    -- state)
+    love.graphics.setFont(gFonts['small'])
 
-    gStateStack = StateStack()
-    gStateStack:push(StartState())
+    gStateMachine = StateMachine {
+        ['start'] = function() return StartState() end,
+    }
+    gStateMachine:change('start')
 
     love.keyboard.keysPressed = {}
 end
